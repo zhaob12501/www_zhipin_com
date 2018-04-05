@@ -34,10 +34,10 @@ class WwwZhipinComItem(scrapy.Item):
     # 公司规模
     companySize = scrapy.Field()
     # 职位标签 
-    positionLables = scrapy.Field()
+    # positionLables = scrapy.Field()
     # 发布日期
     time = scrapy.Field()
     # 更新时间
     updated_at = scrapy.Field()
     # 招聘简介
-    introduction = scrapy.Field()
+    # introduction = scrapy.Field()

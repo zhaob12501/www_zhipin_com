@@ -83,10 +83,10 @@ class ZhipinSpider(scrapy.Spider):
 			item["positionName"] = primary_info.xpath('./h3/a/div[@class="job-title"]/text()').extract_first().strip()
 			# 薪资
 			item["salary"] = primary_info.xpath('./h3/a/span/text()').extract_first().strip()
-			# 职位标签
-			item['positionLables'] = primary_info.xpath('./h3/a/div/div[@class="tags"]/span/text()').extract()
-			# 招聘简介
-			item['introduction'] = primary_info.xpath('./h3/a/div/p/text()').extract()
+			# 职位标签(网站已删除该内容)
+			# item['positionLables'] = primary_info.xpath('./h3/a/div/div[@class="tags"]/span/text()').extract()
+			# 职位描述(暂不可用)
+			# item['introduction'] = primary_info.xpath('./h3/a/div/div/div/div[@class="detail-bottom-text"]p/text()').extract()
 
 			primary = primary_info.xpath('./p/text()').extract()
 
