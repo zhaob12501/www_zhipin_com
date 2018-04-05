@@ -89,6 +89,9 @@ DEFAULT_REQUEST_HEADERS = {
 #ITEM_PIPELINES = {
 #    'www_zhipin_com.pipelines.WwwZhipinComPipeline': 300,
 #}
+ITEM_PIPELINES = {
+    'www_zhipin_com.pipelines.WwwZhipinComPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
